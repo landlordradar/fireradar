@@ -280,7 +280,7 @@ head.ready(function() {
 					styledMap = new google.maps.StyledMapType(styles,{ name: 'Styled Map' });
 					mapOptions = {
 						zoom: 16,
-						center: new google.maps.LatLng(51.5073509,-0.12775829999998223),
+						center: new google.maps.LatLng(52.4050753,-1.5147767),
 						mapTypeId: google.maps.MapTypeId.SATELLITE,
 						disableDefaultUI: true,
 						draggable: true,
@@ -297,37 +297,37 @@ head.ready(function() {
 					mapa.setMapTypeId('map_style');
 					if($('html').hasClass('theme-a')){
 						markerOpts = {
-							position: new google.maps.LatLng(51.5073509,-0.12775829999998223),
+							position: new google.maps.LatLng(52.4050753,-1.5147767),
 							map: mapa,
 							icon: 'images/pin-theme-a.png'
 						}	
 					} else if($('html').hasClass('theme-b')){
 						markerOpts = {
-							position: new google.maps.LatLng(51.5073509,-0.12775829999998223),
+							position: new google.maps.LatLng(52.4050753,-1.5147767),
 							map: mapa,
 							icon: 'images/pin-theme-b.png'
 						}	
 					} else if($('html').hasClass('theme-c')){
 						markerOpts = {
-							position: new google.maps.LatLng(51.5073509,-0.12775829999998223),
+							position: new google.maps.LatLng(52.4050753,-1.5147767),
 							map: mapa,
 							icon: 'images/pin-theme-c.png'
 						}	
 					} else if($('html').hasClass('theme-d')){
 						markerOpts = {
-							position: new google.maps.LatLng(51.5073509,-0.12775829999998223),
+							position: new google.maps.LatLng(52.4050753,-1.5147767),
 							map: mapa,
 							icon: 'images/pin-theme-d.png'
 						}	
 					} else if($('html').hasClass('theme-e')){
 						markerOpts = {
-							position: new google.maps.LatLng(51.5073509,-0.12775829999998223),
+							position: new google.maps.LatLng(52.4050753,-1.5147767),
 							map: mapa,
 							icon: 'images/pin-theme-e.png'
 						}	
 					} else {
 						markerOpts = {
-							position: new google.maps.LatLng(51.5073509,-0.12775829999998223),
+							position: new google.maps.LatLng(52.4050753,-1.5147767),
 							map: mapa,
 							icon: 'images/pin.png'
 						}	
@@ -460,7 +460,7 @@ head.ready(function() {
 	function loadScript(){
 		var script = document.createElement('script');
 		script.type = 'text/javascript';
-		script.src = 'http://maps.google.com/maps/api/js?sensor=false&language=en&callback=initialize';
+		script.src = 'http://maps.google.com/maps/api/js?&sensor=false&language=en&callback=initialize';
 		document.body.appendChild(script);
 	}	
 	window.onload = loadScript;

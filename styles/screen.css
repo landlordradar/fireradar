@@ -169,8 +169,8 @@ img[src*="maps.gstatic.com"], img[src*="googleapis.com"], img[src*="google"] { m
 		#footer > * { width: 1100px; margin-left: auto; margin-right: auto; }
 		#footer h1, #footer h2, #footer h3, #footer h4 { margin-bottom: 25px; color: #a7a6a4; font-size: 1.6em; }
 		#footer .download-a { }
-			#footer .download-a li.as a:hover { background-image: url(../images/download-as-c.png); }
-			#footer .download-a li.gp a:hover { background-image: url(../images/download-gp-c.png); }
+			#footer .download-a li.as a:hover { background-image: url(../images/download-as-e.png); }
+			#footer .download-a li.gp a:hover { background-image: url(../images/download-gp-e.png); }
 		#footer .social-a { }
 			#footer .social-a li.fb a:before, #footer .social-a li.fb a:hover { background-image: url(../images/icon-fb-d.png); }
 			#footer .social-a li.tw a:before, #footer .social-a li.tw a:hover { background-image: url(../images/icon-tw-d.png); }
@@ -208,21 +208,21 @@ img[src*="maps.gstatic.com"], img[src*="googleapis.com"], img[src*="google"] { m
 		.boxshadow .counter > span span { box-shadow: 0 2px 3px rgba(0,0,0,.45); }
 		.counter > span span:before { content: ""; display: block; position: absolute; left: -1px; top: 50%; right: -1px; width: auto; height: 1px; margin: -.5px 0 0; background: #000; }
 
-.download-a { list-style: none; margin: 0; padding: 0; background: url(../images/download-as-b.png) -3000em -3000em no-repeat; text-align: center; }
-	.download-a li { display: inline-block; margin: 0 14px 10px; background: url(../images/download-gp-b.png) -3000em -3000em no-repeat; }
+.download-a { list-style: none; margin: 0; padding: 0; background: url(../images/download-as-e.png) -3000em -3000em no-repeat; text-align: center; }
+	.download-a li { display: inline-block; margin: 0 14px 10px; background: url(../images/download-gp-e.png) -3000em -3000em no-repeat; }
 	.download-a li a { display: inline-block; overflow: hidden; position: relative; width: 200px; height: 65px; border-radius: 6px; text-indent: -3000em; text-align: left; }
-		.download-a li.as a { background: url(../images/download-as-a.png) -5px -5px no-repeat #fff; }
-		.download-a li.gp a { background: url(../images/download-gp-a.png) -5px -5px no-repeat #fff; }
+		.download-a li.as a { background: url(../images/download-as-e.png) -5px -5px no-repeat #fff; }
+		.download-a li.gp a { background: url(../images/download-gp-e.png) -5px -5px no-repeat #fff; }
 	.download-a li a:hover { background-color: #000; }
-		.download-a li.as a:hover { background-image: url(../images/download-as-b.png); }
-		.download-a li.gp a:hover { background-image: url(../images/download-gp-b.png); }
-.download-a.a { background: url(../images/download-as-d.png) -3000em -3000em no-repeat; }
-	.download-a.a li { background: url(../images/download-gp-d.png) -3000em -3000em no-repeat; }
-	.download-a.a li a { width: 196px; height: 61px; border: 2px solid #fff; }
-		.download-a.a li.as a { background: url(../images/download-as-b.png) -5px -5px no-repeat; }
-		.download-a.a li.gp a { background: url(../images/download-gp-b.png) -5px -5px no-repeat; }
-			.download-a.a li.as a:hover { background-image: url(../images/download-as-d.png); }
-			.download-a.a li.gp a:hover { background-image: url(../images/download-gp-d.png); }
+		.download-a li.as a:hover { background-image: url(../images/download-as-e.png); }
+		.download-a li.gp a:hover { background-image: url(../images/download-gp-e.png); }
+.download-a.a { background: url(../images/download-as-e.png) -3000em -3000em no-repeat; }
+	.download-a.a li { background: url(../images/download-gp-e.png) -3000em -3000em no-repeat; }
+/*	.download-a.a li a { width: 196px; height: 61px; border: 2px solid #fff; }*/
+		.download-a.a li.as a { background: url(../images/download-as-e.png) -5px -5px no-repeat; }
+		.download-a.a li.gp a { background: url(../images/download-gp-e.png) -5px -5px no-repeat; }
+			.download-a.a li.as a:hover { background-image: url(../images/download-as-e.png); }
+			.download-a.a li.gp a:hover { background-image: url(../images/download-gp-e.png); }
 	
 .gallery-a { overflow: hidden; position: relative; left: 3px; list-style: none; width: 1004px; margin: 0 auto 58px; padding: 0; line-height: 1.2; }
 	.gallery-a li { position: relative; float: left; width: 328px;; margin: 0 6px 6px 0; font-size: 2.238em; }
@@ -2022,5 +2022,10 @@ h6 { font-size: 2.4em; }
 #root [class^="mobile"], #root .list-b li[class^="mobile"] { width: auto; height: auto; padding: 0; background: none; }
 #root #welcome [class*="mobile"] { padding: 0 12px; }
 #root [class*="mobile"], #welcome > figure, #root #content .list-b li.mobile-b { transform: none; -moz-transform: none; -webkit-transform: none; -o-transform: none; -ms-transform: none; }
+}
+
+/* Additional CSS */
+.section-white {
+    background-color: #fff !important;
 }
 
