@@ -2029,3 +2029,15 @@ h6 { font-size: 2.4em; }
     background-color: #fff !important;
 }
 
+.btn-main-register {
+    background-color: #f32160 !important;
+    color: #fff !important;
+    transform: background-color 0.2s;
+}
+
+.btn-main-register:hover,
+.btn-main-register:active {
+    background-color: #e60c4e !important;
+}
+
+
