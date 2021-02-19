@@ -9,6 +9,12 @@ $(document).ready(function() {
         offset: "60px;"
     });
     
+    $(".js--wp-2").waypoint(function(direction) {
+        $(".js--wp-2").addClass("animated pulse");
+    }, {
+        offset: "50%"
+    });
+    
     $('a[href*="#"]')
   // Remove links that don't actually link to anything
     .not('[href="#"]')
@@ -41,5 +47,23 @@ $(document).ready(function() {
         }
     }
   });
+  
+    const url = "https://script.google.com/macros/s/AKfycbymVaM_klXvrVU21-rkYpI8q6zZ6X9vaPh981Cl8Xs6uo2cBUB9sXHsNA/exec";
+    const form = document.forms['contact-form'];
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        
+        var formData = new FormData(form);
+        
+        fetch(url, { method: "POST", body: formData })
+        .then(response => {
+            console.log("Success!", response)
+            form.reset();
+        })
+        .catch(error => {
+            console.error("Error!", error.message);
+        })
+    });
     
 })

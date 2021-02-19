@@ -2040,4 +2040,8 @@ h6 { font-size: 2.4em; }
     background-color: #e60c4e !important;
 }
 
+article:focus {
+    outline-width: 0;
+}
+
 
