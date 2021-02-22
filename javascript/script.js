@@ -48,7 +48,7 @@ $(document).ready(function() {
     }
   });
   
-    const url = "https://script.google.com/macros/s/AKfycbymVaM_klXvrVU21-rkYpI8q6zZ6X9vaPh981Cl8Xs6uo2cBUB9sXHsNA/exec";
+    const url = "https://script.google.com/macros/s/AKfycbzpAWUTHdvya_UlEDYbkT65DHDwj-ZS5f_U5rwsveVQfG7XoQGAnDDe/exec";
     const form = document.forms['contact-form'];
     
     form.addEventListener('submit', e => {
@@ -58,8 +58,8 @@ $(document).ready(function() {
         
         fetch(url, { method: "POST", body: formData })
         .then(response => {
-            console.log("Success!", response)
             form.reset();
+            console.log("Success!", response)
         })
         .catch(error => {
             console.error("Error!", error.message);
