@@ -460,7 +460,7 @@ head.ready(function() {
 	function loadScript(){
 		var script = document.createElement('script');
 		script.type = 'text/javascript';
-		script.src = 'http://maps.google.com/maps/api/js?&sensor=false&language=en&callback=initialize';
+		script.src = 'https://maps.google.com/maps/api/js?key=AIzaSyAq0YYl6kJtzCWMbNKyM0pvgqI-SWQOmf0&sensor=false&language=en&callback=initialize';
 		document.body.appendChild(script);
 	}	
 	window.onload = loadScript;
