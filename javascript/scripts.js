@@ -299,7 +299,7 @@ head.ready(function() {
 						markerOpts = {
 							position: new google.maps.LatLng(52.4050753,-1.5147767),
 							map: mapa,
-							icon: 'images/pin-theme-a.png'
+							icon: 'images/pin-theme-e.png'
 						}	
 					} else if($('html').hasClass('theme-b')){
 						markerOpts = {

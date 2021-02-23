@@ -1903,6 +1903,11 @@ body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 .gallery-b li { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
 #root .desktop-hide, #root .tablet-only { position: relative; left: 0; top: 0; }
 #root .desktop-only, #root .tablet-hide, #root .regular-only, .module-a > figure, #content.a .module-a > figure, .list-b li .no, #root .sticky-c, #root #content .sticky-c, #root .sticky-d, #root #content .sticky-d#root .module-a .sticky-a, #root .module-a .sticky-b { position: absolute !important; left: -3000em !important; top: -3000em !important; bottom: inherit !important; right: inherit !important; }
+    /* Additional CSS */
+    #nav ul li a{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
 @media only screen and (max-width: 47.5em) { /* 760 */
 #top h1, #clone h1, #featured > *, #content, #footer > *, #content.a > *, #contact > *, #contact > form, .news-b, #content.news-b, #welcome > *, #content.a > .module-a > *, #content.a > .va > *, #content.a > .vb > *, .news-c, #content.a > * > .news-c, #content.a > .va .slider-a, #content.a > .vb .slider-a, #content.a > .va, #content.a > .vb, .gallery-c > .heading-a { width: auto; }
@@ -1924,7 +1929,7 @@ img[src*="maps.gstatic.com"], img[src*="googleapis.com"], img[src*="google"] { m
 #welcome { text-align: center; }
 #welcome > figure.mobile-a { margin-left: -562px; }
 	#welcome h1, #welcome h2 { margin-bottom: 10px; }
-	#root #welcome > figure { position: relative; left: 0; top: 0; margin: -200px auto 30px; }
+	#root #welcome > figure { position: relative; left: 0; top: 0; margin: -310px -10% 30px; }
 	#welcome > figure { transform-origin: center 100%; -moz-transform-origin: center 100%; -webkit-transform-origin: center 100%; -o-transform-origin: center 100%; -ms-transform-origin: center 100%; }
 	#welcome .download-a { text-align: center; }
 		#welcome .download-a li, .download-a li { margin: 0 4px 10px; }
@@ -1994,6 +1999,12 @@ h1, h2, .heading-a h1, .heading-a h2, .heading-a h3 { font-size: 3.6em; }
 
 #root .tablet-hide, #root .mobile-only { position: relative; left: 0; top: 0; }
 #root .tablet-only, #root .mobile-hide, #clone, .js #clone + div, #contact > .map, .js #root .list-b li:after, .js #root .list-b li:after, #nav > ul > li > ul > li > ul { position: absolute !important; left: -3000em !important; top: -3000em !important; bottom: inherit !important; right: inherit !important; }
+    
+/*Additional CSS*/
+    header h1 img {
+        margin-top: 0 !important;
+    }
+    
 }
 @media only screen and (max-width: 31.25em) { /* 500 */
 #contact { }
@@ -2030,18 +2041,38 @@ h6 { font-size: 2.4em; }
 }
 
 .btn-main-register {
-    background-color: #f32160 !important;
     color: #fff !important;
-    transform: background-color 0.2s;
+    background-color: #f43c43 !important;
+    transform: background-color 0.2s color 0.2s;
 }
 
 .btn-main-register:hover,
 .btn-main-register:active {
-    background-color: #e60c4e !important;
+    background-color: #dc363c !important;
 }
 
 article:focus {
     outline-width: 0;
 }
 
+th, td {
+    text-align: center;
+}
+
+#btn-contact-submit:link,
+#btn-contact-submit:visited {
+    color: #f43c43 !important;
+    border: 1px solid #f43c43 !important;
+    transform: background-color 0.2s color 0.2s;
+}
+
+#btn-contact-submit:hover,
+#btn-contact-submit:active {
+    color: #fff !important;
+    background-color: #f43c43;
+}
+
+#btn-contact-submit:focus {
+    outline: 0;
+}
 
